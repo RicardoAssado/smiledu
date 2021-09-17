@@ -1,0 +1,175 @@
+
+
+@media screen and (max-width: 768px) {
+    /* Global */
+    .section {padding: 3em 0;}
+    .grid-2 {grid-template-columns: 100%;}
+
+    /* Banner */
+    .banner .banner-caption {
+        top: 0%;
+        left: 0%;
+        transform: initial;
+        padding: 1em;
+    }
+    .banner .banner-caption .h2-ExtraBold {font-size: 1.25em;}
+    .banner .banner-caption p {font-size: 13px;}
+
+    /* Header */
+    .header {position: relative;}
+    .header::before,
+    .header .header-block {display: none;}
+
+    /* Menu Responsive */
+    .menu-responsive {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 0;
+    }
+
+    .logo-responsive img {
+        display: block;
+        width: 150px;
+    }
+
+    .hamburger-responsive {
+        padding: .7em;
+        border: 1px solid #fb9016;
+        border-radius: 8px;
+    }
+    .hamburger-icon {
+        width: 16px;
+        height: 1em;
+        position: relative;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+    .hamburger-icon span {
+        display: block;
+        position: absolute;
+        left: 0;
+        height: 4px;
+        width: 100%;
+        background-color: #fb9016;
+        opacity: 1;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+    }
+
+    .hamburger-icon span:nth-child(1) { top: 0px; }
+    .hamburger-icon span:nth-child(2),
+    .hamburger-icon span:nth-child(3) { top: 7px; }
+    .hamburger-icon span:nth-child(4) { top: 14px; }
+    .hamburger-icon.open span:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+    .hamburger-icon.open span:nth-child(2) { transform: rotate(45deg); }
+    .hamburger-icon.open span:nth-child(3) { transform: rotate(-45deg); }
+    .hamburger-icon.open span:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+
+    .menu-collapse {display: none;}
+
+    .navbar {padding: 1em 0;}
+    .navbar .logo {display: none;}
+    .list-navbar {
+        width: 100%;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .list-navbar .nav-item {width: 100%;}
+    .list-navbar .nav-item:not(:last-of-type) {padding: .5em;}
+
+    .list-navbar .form-cotiza,
+    .list-navbar .nav-item:last-of-type:hover .form-cotiza {opacity: 1;}
+
+    .list-navbar .form-cotiza {
+        position: relative;
+        top: 0;
+
+        display: none;
+        min-width: 100%;
+        margin: 1em 0;
+        transition: auto;
+    }
+
+    .list-navbar .form-cotiza::before,
+    .list-navbar .form-cotiza::after {
+        display: none;
+        /*left: 60px;
+        right: auto;*/
+    }
+
+    /* Slider */
+    .slide-caption {transform: translate(0%, -110%);}
+
+    /* Advantages */
+    .grid-advantages {grid-template-columns: 100%;}
+
+    .advantages-img {order: 2;}
+    .advantages-img img {
+        position: relative;
+        bottom: -16%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, 0%);
+    }
+
+    .advantage-item:nth-child(odd) {border-right: 0;}
+    .advantage-item:nth-child(3) {border-bottom: 1px dashed #fff;}
+
+    /* PUNTOS DE VENTA */
+    .puntos-venta_filter {grid-gap: 0;}
+}
+
+@media screen and (max-width: 576px) {
+    /* Global */
+    .h2 {font-size: 1.5em;}
+    .h2-ExtraBold {font-size: 2em;}
+
+    /* Form */
+    .grid-fg .form-group {width: 100%;}
+
+    /* Slider */
+    .slide-caption {transform: translate(2%, -355%);}
+
+    /* Services Index */
+    .slider-services .owl-nav {margin-top: 2em;}
+
+    .slider-services .owl-nav button .icon-arrow-left,
+    .slider-services .owl-nav button .icon-arrow-right {font-size: 2em;}
+
+    .slider-services .owl-nav button.owl-prev,
+    .slider-services .owl-nav button.owl-next {position: inherit;}
+
+    /* Footer */
+    .grid-footer {padding: 2.5em 0;}
+    .item-footer:nth-of-type(2) {padding: 0;}
+
+    /* Service - Detail */
+    .services-detail h3 {margin-top: 1em;}
+    .services-detail .list-detail {padding: 2.5em 1.5em 0;}
+    .services-detail_flex {display: grid;}
+
+    /* FAQ */
+    .panel-heading {grid-template-columns: 10% 90%;}
+}
+
+@media screen and (max-width: 425px) {
+    /* Global */
+    .h2 {font-size: 1.25em;}
+    .h2-ExtraBold {font-size: 1em;}
+}
+
+@media screen and (max-width: 360px) {
+    /* Global */
+
+    /* Slider */
+}
