@@ -91,9 +91,8 @@ a:focus, button:focus, select:focus {outline: 1px solid transparent;}
     transition: .5s all;
 }
 
-.main .panel .item .panel-head .panel-head__element i {
-    font-size: .65em;
-    transition: .5s all;
+.main .panel .item .panel-head .panel-head__icon {
+    flex: 1.25;
 }
 
 .main .panel .item .panel-head.open .panel-head__element i {
@@ -116,21 +115,39 @@ a:focus, button:focus, select:focus {outline: 1px solid transparent;}
     color: #ffd600;
 }
 
-.main .panel .item .panel-head .panel-head__element .logo {
-    display: block;
-    width: 50%;
-}
-
 .main .panel .item .panel-head .panel-head__element {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex: 12;
     margin-left: 1em;
+}
+
+.main .panel .item .panel-head .panel-head__element .logo {
+    display: block;
+    width: 50%;
+}
+
+.main .panel .item .panel-head .panel-head__element .name span {
+    display: block;
+}
+
+.main .panel .item .panel-head .panel-head__element .name span:first-of-type {
+    margin-bottom: 0.35em;
+}
+
+.main .panel .item .panel-head .panel-head__element .name span:last-of-type {
+    font-size: .75em;
 }
 
 .main .panel .item .panel-head .panel-head__element span {
     font-size: .9em;
+}
+
+.main .panel .item .panel-head .panel-head__element i {
+    font-size: .65em;
+    transition: .5s all;
 }
 
 .main .panel .item .panel-content {
