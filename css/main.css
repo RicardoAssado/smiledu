@@ -43,6 +43,10 @@ a:focus, button:focus, select:focus {outline: 1px solid transparent;}
     object-fit: cover;
 }
 
+.h2 {
+    font-size: 1em;
+}
+
 /* Colors */
 .white {color: #fff;}
 .black {color: #000;}
@@ -92,7 +96,11 @@ a:focus, button:focus, select:focus {outline: 1px solid transparent;}
 }
 
 .main .panel .item .panel-head .panel-head__icon {
-    flex: 1.25;
+    flex: 1.5;
+}
+
+.main .panel .item .panel-head .panel-head__icon img {
+    margin-left: -4px;
 }
 
 .main .panel .item .panel-head.open .panel-head__element i {
