@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?nb1l9y');
+  src:  url('fonts/icomoon.eot?nb1l9y#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?nb1l9y') format('truetype'),
+    url('fonts/icomoon.woff?nb1l9y') format('woff'),
+    url('fonts/icomoon.svg?nb1l9y#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-agenda:before {
+  content: "\e900";
+}
+.icon-agregar:before {
+  content: "\e901";
+}
+.icon-agregar-usuario:before {
+  content: "\e902";
+}
+.icon-arrow-down:before {
+  content: "\e903";
+}
+.icon-arrow-left:before {
+  content: "\e904";
+}
+.icon-buscar:before {
+  content: "\e905";
+}
+.icon-calendario:before {
+  content: "\e906";
+}
+.icon-configuracion:before {
+  content: "\e907";
+}
+.icon-corona:before {
+  content: "\e908";
+}
+.icon-dashboard:before {
+  content: "\e909";
+}
+.icon-eliminar:before {
+  content: "\e90a";
+}
+.icon-facturacion:before {
+  content: "\e90b";
+}
+.icon-gestion-academica:before {
+  content: "\e90c";
+}
+.icon-maletin:before {
+  content: "\e90d";
+}
+.icon-mensaje:before {
+  content: "\e90e";
+}
+.icon-menu-hide:before {
+  content: "\e90f";
+}
+.icon-menu-points:before {
+  content: "\e910";
+}
+.icon-menu-show:before {
+  content: "\e911";
+}
+.icon-noticias:before {
+  content: "\e912";
+}
+.icon-notificacion:before {
+  content: "\e913";
+}
+.icon-planificacion:before {
+  content: "\e914";
+}
+.icon-plus:before {
+  content: "\e915";
+}
+.icon-programacion:before {
+  content: "\e916";
+}
+.icon-tesoreria:before {
+  content: "\e917";
+}
