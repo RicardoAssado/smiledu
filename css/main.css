@@ -32,12 +32,6 @@ a:focus, button:focus, select:focus {outline: 1px solid transparent;}
     margin: 0 auto;
 }
 
-.section {
-    position: relative;
-    padding: 3.5em 0;
-    overflow: hidden;
-}
-
 .img-responsive {
     display: block;
     max-width: 100%;
@@ -47,101 +41,6 @@ a:focus, button:focus, select:focus {outline: 1px solid transparent;}
     display: block;
     width: 100%;
     object-fit: cover;
-}
-
-.img-custom {
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .35s all;
-}
-
-.grid-2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.grid-3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(305px, 1fr));
-}
-
-.grid-4 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
-}
-
-.gg-05 {grid-gap: .5em;}
-.gg-1 {grid-gap: 1em;}
-.gg-2 {grid-gap: 2em;}
-
-.grid-main {
-    display: grid;
-    grid-template-columns: 30% 1fr;
-    grid-gap: 3em;
-}
-
-.h2 {font: 2.5em 'Pangram';}
-
-.h3 {
-    font: 2.73em 'Pangram ExtraBold';
-    margin-bottom: 1rem;
-}
-
-.h4 {font: 1.25em 'Pangram Bold';}
-
-.h5 {font: 1.1em 'Pangram Bold';}
-
-.text {
-    font: 15px 'Lato';
-    margin-bottom: 1em;
-}
-.text-center {text-align: center;}
-.text-justify {text-align: justify;}
-.text-right {text-align: right;}
-.text-may {text-transform: uppercase;}
-
-.btn {
-    display: inline-flex;
-    justify-content: center;
-
-    font: 1em 'Pangram Bold';
-    padding: .5rem 1.75rem;
-    text-transform: uppercase;
-
-    border: 0;
-    cursor: pointer;
-    transition: .5s all;
-}
-
-.btn-small {
-    display: inline-flex;
-    justify-content: center;
-
-    font: 15px 'Pangram';
-    padding: .5rem 2.5rem;
-
-    border: 0;
-    cursor: pointer;
-    transition: .5s all;
-}
-
-/* Buttons */
-.btn-black {
-    color: #fff;
-    background-color: #000;
-}
-.btn-black:hover {
-    background-color: #f75726;
-}
-
-.btn-orange {
-    color: #fff;
-    background-color: #f75726;
-}
-.btn-orange:hover {
-    color: #fff;
-    background-color: #000;
 }
 
 /* Colors */
@@ -179,16 +78,50 @@ a:focus, button:focus, select:focus {outline: 1px solid transparent;}
 }
 
 .main .panel .box {
+    padding: .25em 0;
     border-bottom: 1px solid #edeef0;
 }
 
-.main .panel .panel-item {
+.main .panel .item .panel-head {
     display: flex;
     align-items: center;
-    padding: 1em;
+    padding: .75em 1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .5s all;
 }
 
-.main .panel .panel-item .panel-item__element {
+.main .panel .item .panel-head .panel-head__element i {
+    font-size: .65em;
+    transition: .5s all;
+}
+
+.main .panel .item .panel-head.open .panel-head__element i {
+    transform: rotate(180deg);
+}
+
+.main .panel .item .panel-head:hover {
+    background-color: #f5f5f5;
+}
+
+.main .panel .item .panel-head:hover .panel-head__icon i,
+.main .panel .item .panel-head:hover .panel-head__element span,
+.main .panel .item .panel-head:hover .panel-head__element i {
+    transition: .5s all;
+}
+
+.main .panel .item .panel-head:hover .panel-head__icon i,
+.main .panel .item .panel-head:hover .panel-head__element span,
+.main .panel .item .panel-head:hover .panel-head__element i {
+    color: #ffd600;
+}
+
+.main .panel .item .panel-head .panel-head__element .logo {
+    display: block;
+    width: 50%;
+}
+
+.main .panel .item .panel-head .panel-head__element {
     width: 100%;
     display: flex;
     align-items: center;
@@ -196,25 +129,37 @@ a:focus, button:focus, select:focus {outline: 1px solid transparent;}
     margin-left: 1em;
 }
 
-.main .panel .panel-item .panel-item__element span {
+.main .panel .item .panel-head .panel-head__element span {
     font-size: .9em;
 }
 
-.main .panel .panel-item .panel-item__element .logo {
-    display: block;
-    width: 50%;
+.main .panel .item .panel-content {
+    padding-left: 2.15em;
+}
+
+.main .panel .item .panel-content a {
+    display: flex;
+    padding: 1em;
+    font-size: .9em;
+    border-radius: 25px;
+    transition: .5s all;
+}
+
+.main .panel .item .panel-content a:hover {
+    background-color: #ebebeb;
+    color: #ffd600;
 }
 
 /* Content */
 .main .content {
     position: relative;
     width: 100%;
-    margin-left: 18%;/*3%*/
+    margin-left: 3%;
     transition: .6s all;
 }
-/* .main .content.show {
-    margin-left: 15%;
-} */
+.main .content.show {
+    margin-left: 18%;
+}
 
 .main .content .content-heading {
     height: 15vh;
